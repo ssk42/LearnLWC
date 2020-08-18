@@ -8,8 +8,6 @@ export default class AccountSearch extends LightningElement {
     }
     reset() {
         this.numberOfEmployees = null;
-        //tests
-        this.numberOfEmployees=1;
     }
     @wire(queryAccountsByEmployeeNumber, { numberOfEmployees: '$numberOfEmployees' })
     accounts;
