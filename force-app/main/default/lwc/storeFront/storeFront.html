@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <div slot="actions">
+            <lightning-layout vertical-align="end">
+                <lightning-button
+                    class="slds-p-left_xx-small"
+                    label="Clear All"
+                    onclick={clearAll}
+                ></lightning-button>
+            </lightning-layout>
+        </div>
+        <c-item name="first" item-name="Milk" onclear={handleClear}></c-item>
+        <c-item name="second" item-name="Eggs" onclear={handleClear}></c-item>
+        <c-item name="third" onclear={handleClear}></c-item>
+        <c-item name="fourth" onclear={handleClear}></c-item>
+    </lightning-card>
+</template>
